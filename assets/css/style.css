@@ -146,11 +146,10 @@ h3 {
 .nav-link {
   text-decoration: none;
   color: #dcdcdc;
-  font-size: 80%;
+  font-size: 11.5px;
   letter-spacing: 2px;
   transition: 0.3s ease-in-out;
   font-weight: 400;
-  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.3;
