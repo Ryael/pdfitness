@@ -586,6 +586,9 @@ button {
 }
 
 #about-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-left: 8.33333333%;
 }
 
@@ -722,7 +725,7 @@ button {
 }
 
 #about-questions li::marker {
-  color: #c4262e;
+  color: #dfb255;
 }
 
 #about-contact p {
@@ -732,6 +735,7 @@ button {
   font-size: 16px;
   line-height: 1.4;
   font-weight: 400;
+  padding: 0 150px;
 }
 
 #about-contact ul {
