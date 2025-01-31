@@ -1125,12 +1125,12 @@ button {
 }
 
 .coaching-type-inner {
-    border: 1px solid #E1E1E1;
+    border: 1px solid #AAA;
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
 .coaching-type-inner:hover {
-    border-color: #AAA;
+    border-color: #555;
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
