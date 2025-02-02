@@ -837,6 +837,10 @@ button {
   margin-bottom: 0;
 }
 
+#about-contact #faq-first {
+  margin-bottom: 25px;
+}
+
 /* Testamonial Slider */
 
 #testimonials {
@@ -1243,7 +1247,8 @@ button {
   margin-bottom: 0;
 }
 
-.coaching-description ul {
+.coaching-description ul,
+.mission-description ul {
     list-style-position: inside;
     display: flex;
     text-align: left;
@@ -1254,6 +1259,10 @@ button {
     font-weight: 400;
     gap: 25px;
     color: #ccc;
+}
+
+.mission-description li {
+  margin-right: 5px;
 }
 
 .coaching-description h3,
