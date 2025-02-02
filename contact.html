@@ -21,6 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- End CSS -->
   </head>
   <body class="animate__animated animate__fadeIn">
@@ -118,7 +119,7 @@
                       If you want to get leaner, stronger, fitter and see an overall boost in your health and energy? Then we'd love to chat about how we might be able to help. Simply either fill in your details below or send us a message via e-mail or text. We'll get in contact to have a quick chat about your goals, talk you through our available packages, and then (if it seems like we'd be the right solution), we'll get you booked in for a 100% zero obligation training session.
                     </p>
                     <div id="free-trial-button">
-                        <a class="button-dark coaching-scroll">Let's Get Physical</a>
+                        <button class="button-dark coaching-scroll">Let's Get Physical</button>
                     </div>
                 </div>
             </div>
@@ -167,11 +168,10 @@
                     </div>
                     </section>
                 <!-- End Contacts -->
-                <section class="section">
-                <div id="form-contact">
+                <section class="section" id="form-contact">
                   <h2>Drop Us a Message</h2>
                     <div class="form-container">
-                        <form class="signup-form" action="thank-you.html">
+                        <form class="signup-form" method="POST" onsubmit="return false">
                             <div class="start-form">
                                 <label for="name" class="block">Name</label>
                                 <input type="text" id="name" class="form-shape text-form" placeholder="Name" required aria-required="true" />
@@ -188,8 +188,7 @@
                             <button type="submit" class="button-dark" value="Let's gym!">Submit Message</button>
                         </form>
                     </div>
-                </div>
-            </section>
+                </section>
         <!-- End Contact -->
 
         <!-- Google Maps -->
@@ -228,8 +227,7 @@
 
         <!-- JavaScript -->
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/tab-content.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/contact-scroll.js"></script>
         <!-- End JavaScript -->
 
         <!-- Font Awesome Script -->
