@@ -1364,18 +1364,17 @@ button {
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-
 /* Gallery */
 
 #gallery {
     display: flex;
-    padding: 0px 50px 25px 0px;
+    padding: 25px 0px 50px 0px;
 }
 
 #popup-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 40px;
 }
 
 #popup-gallery img {
