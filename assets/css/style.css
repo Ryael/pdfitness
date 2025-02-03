@@ -685,34 +685,8 @@ button {
   color: #ccc;
 }
 
-.mission-description {
-  display: flex;
-  text-align: left;
-}
-
-.mission-content {
-  padding: 35px 24px 0px 24px;
-  text-align: left;
-  overflow: auto;
-}
-
-.mission-left {
-    width: 33.33%;
-    padding-right: 12px;
-    box-sizing: border-box;
-}
-
-.mission-right {
-    width: 33.33%;
-    padding-left: 12px;
-    box-sizing: border-box;
-}
-
-.mission-center {
-    display: inline-block;
-    width: 33.33%;
-    padding: 0 12px 0 12px;
-    box-sizing: border-box;
+#coaching-comparisons .coaching-left {
+  padding: 0;
 }
 
 #about-questions {
@@ -745,7 +719,6 @@ button {
 }
 
 #about-contact ul {
-  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -1236,8 +1209,7 @@ button {
   overflow: auto;
 }
 
-.coaching-description p,
-.mission-description p {
+.coaching-description p {
     margin-bottom: 25px;
     display: flex;
     font-size: 16px;
@@ -1246,14 +1218,12 @@ button {
     color: #ccc;
 }
 
-.coaching-description p:last-child,
-.mission-description p:last-child,
+.coaching-description p:last-child
 #about-contact li:last-child {
   margin-bottom: 0;
 }
 
-.coaching-description ul,
-.mission-description ul {
+.coaching-description ul {
     list-style-position: inside;
     display: flex;
     text-align: left;
@@ -1266,12 +1236,7 @@ button {
     color: #ccc;
 }
 
-.mission-description li {
-  margin-right: 5px;
-}
-
-.coaching-description h3,
-.mission-description h3 {
+.coaching-description h3 {
     margin-bottom: 25px;
     display: flex;
     font-size: 22px;
@@ -1281,8 +1246,7 @@ button {
     color: #ccc;
 }
 
-#coaching-comparison-tabs,
-#about-mission {
+#coaching-comparison-tabs {
   text-align: center;
   background-color: #111;
   background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.97)), url("../images/contact-us.png") no-repeat center center;
@@ -2125,16 +2089,20 @@ button {
 
   .coaching-left,
   .coaching-center,
-  .mission-left,
-  .mission-center {
+  #coaching-comparisons .coaching-left {
     padding: 0px 0px 25px 0;
     width: 100%;
   }
 
   .coaching-right,
-  .mission-right {
+  #coaching-comparisons .coaching-right {
     width: 100%;
     padding: 0
+  }
+
+  #coaching-comparisons {
+    display: flex;
+    flex-direction: column;
   }
 
   #coaching-services > .column-container > .text-title {
@@ -2220,31 +2188,23 @@ button {
 
     #column-left > p,
     #column-center > p,
-    #column-right > p,
-    #mission-left > p,
-    #mission-center > p,
-    #mission-right > p {
+    #column-right > p {
       text-align: left;
   }
 
     .coaching-left,
-    .coaching-center,
-    .mission-left,
-    .missiong-center {
+    .coaching-center {
         padding: 0px 0px 25px 0;
         width: 100%;
     }
 
-    .coaching-right,
-    .missiong-right {
+    .coaching-right {
        width: 100%;
        padding: 0
      }
 
      .coaching-description > .coaching-left,
-     .coaching-description > .coaching-center,
-     .mission-description > .mission-left,
-     .mission-description > .mission-center {
+     .coaching-description > .coaching-center {
         padding: 0;
      }
 
