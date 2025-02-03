@@ -544,9 +544,6 @@ button {
 #contact-us > .container > p {
     margin-bottom: 25px;
     color: #dcdcdc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
@@ -681,7 +678,7 @@ button {
   text-align: center;
   letter-spacing: 0.5em;
   line-height: 1.4;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   color: #ccc;
 }
 
@@ -828,6 +825,10 @@ button {
   background-color: #111;
   background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/contact-us.png") no-repeat center center;
   background-size: cover;
+}
+
+.testimonial {
+  text-align: left;
 }
 
 #testimonials .container {
@@ -1048,6 +1049,10 @@ button {
   color: #FFF;
 }
 
+#testimonials-end {
+  margin-top: 50px;
+}
+
 /* Coaching Services */
 
 #coaching-services {
@@ -1218,7 +1223,7 @@ button {
     color: #ccc;
 }
 
-.coaching-description p:last-child
+.coaching-description p:last-child,
 #about-contact li:last-child {
   margin-bottom: 0;
 }
@@ -1353,6 +1358,10 @@ button {
     object-fit: cover;
 }
 
+#free-trial #gallery-paragraph {
+  margin-bottom: 50px;
+}
+
 /* Contact */
 
 #free-trial,
@@ -1379,7 +1388,7 @@ button {
 
 #free-trial h2,
 #about-contact h2 {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     color: #111;
     display: flex;
     align-items: center;
@@ -1546,7 +1555,7 @@ button {
 }
 
 #form-contact h2 {
-            margin-bottom: 50px;
+    margin-bottom: 75px;
     color: #111;
     display: flex;
     align-items: center;
@@ -2114,7 +2123,8 @@ button {
 
   #gym-ethos,
   #coaching p,
-  #free-trial {
+  #free-trial,
+  #contact-us p {
     text-align: left;
   }
 
@@ -2218,7 +2228,7 @@ button {
     #premium,
     #semi-private,
     #online {
-      padding: 35px 10px;
+      padding: 35px 10px 0 10px;
     }
 
     .coaching-description li:last-child {
