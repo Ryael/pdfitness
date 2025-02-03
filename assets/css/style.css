@@ -585,6 +585,11 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
+#about-left {
+  display: flex;
+  justify-content: center;
+}
+
 #about-right {
   display: flex;
   justify-content: center;
@@ -669,7 +674,7 @@ button {
     gap: 25px;
 }
 
-#about-mission h2 {
+#coaching-comparison-tabs h2 {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2029,9 +2034,11 @@ button {
 /* General Queries */
 
 @media (min-width: 768px) {
+
     .container {
         width: 750px;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -2107,7 +2114,7 @@ button {
             #contact-options {
                 width: auto;
     margin-left: 3%;
-}
+  }
 }
 
 @media (max-width: 992px) {
@@ -2117,12 +2124,15 @@ button {
   }
 
   .coaching-left,
-  .coaching-center {
+  .coaching-center,
+  .mission-left,
+  .mission-center {
     padding: 0px 0px 25px 0;
     width: 100%;
   }
 
-  .coaching-right {
+  .coaching-right,
+  .mission-right {
     width: 100%;
     padding: 0
   }
@@ -2140,6 +2150,28 @@ button {
   #free-trial {
     text-align: left;
   }
+
+  #about-us {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  #about-left {
+    margin-bottom: 25px;
+  }
+
+  #about-right {
+    margin-left: 0;
+  }
+
+  .accordion > dt > a {
+    margin: 0 100px;
+  }
+
+  #about-contact p {
+    padding: 0 100px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -2188,23 +2220,31 @@ button {
 
     #column-left > p,
     #column-center > p,
-    #column-right > p {
+    #column-right > p,
+    #mission-left > p,
+    #mission-center > p,
+    #mission-right > p {
       text-align: left;
   }
 
     .coaching-left,
-    .coaching-center {
+    .coaching-center,
+    .mission-left,
+    .missiong-center {
         padding: 0px 0px 25px 0;
         width: 100%;
     }
 
-    .coaching-right {
+    .coaching-right,
+    .missiong-right {
        width: 100%;
        padding: 0
      }
 
      .coaching-description > .coaching-left,
-     .coaching-description > .coaching-center {
+     .coaching-description > .coaching-center,
+     .mission-description > .mission-left,
+     .mission-description > .mission-center {
         padding: 0;
      }
 
@@ -2225,6 +2265,30 @@ button {
     .coaching-description li:last-child {
       margin-bottom: 25px;
     }
+
+    #about-contact {
+      padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+
+  .accordion > dt > a {
+    margin: 0;
+  }
+
+ #about-contact p {
+    padding: 0px;
+  }
+
+  #about-questions {
+    margin: 25px 0 0 0;
+  }
+
+  #about-contact ul {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 480px) {
