@@ -1812,7 +1812,7 @@ button {
 
 /* Mobile Menu Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 788px) {
 
     #nav-menu {
         display: none;
