@@ -738,11 +738,7 @@ button {
   color: #777;
   text-decoration: none;
   padding: 14px 20px;
-  border: 1px solid #e5e5e5;
-    border-top-color: rgb(229, 229, 229);
-    border-right-color: rgb(229, 229, 229);
-    border-bottom-color: rgb(229, 229, 229);
-    border-left-color: rgb(229, 229, 229);
+  border: 1px solid #AAA;
   -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -785,7 +781,7 @@ button {
 
 .accordion > dt > a.active {
   color: #000;
-  border-color: #ddd;
+  border-color: #444;
   background-color: #fcfcfc;
   cursor: default;
   text-decoration: none;
@@ -793,7 +789,7 @@ button {
 
 .accordion > dt > a:hover {
   text-decoration: none;
-  border-color: #ddd;
+  border-color: #444;
   background-color: #fcfcfc;
   color: #444;
 }
