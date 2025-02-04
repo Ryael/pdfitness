@@ -1507,6 +1507,10 @@ button {
     letter-spacing: 4px;
 }
 
+#contact-text {
+  text-decoration: none;
+}
+
 #form-contact i {
     margin-right: 5px;
 }
