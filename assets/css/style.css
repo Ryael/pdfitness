@@ -1,35 +1,46 @@
 /* Table of Contents */
 
 /* 01. Fonts */
-/* 02. Common Styles */
-/* 03. Navigation */
-/* 04. Hero */
-/* 05. Gym Ethos */
-/* 06. Coaching */
-/* 07. Why Choose Us? */
-/* 08. Buttons */
-/* 09. Et-Line Icons */
-/* 10. Discovery Call */
-/* 11. About Us */
-/* 12. Testamonial Slider */
-/* 13. Coaching Services */
-/*  13.1 Coaching Tabs */
-/* 14. Gallery */
-/* 15. Contact */
-/* 16. Error 404 */
-/* 17. Thank You */
-/* 18. Google Maps */
-/* 19. Footer */
-/* 20. Media Query */
-/*  20.1 Mobile Menu Queries */
-/*  20.2 General Queries */
+/* 02. Global Variables */
+/* 03. Common Styles */
+/* 04. Navigation */
+/* 05. Buttons */
+/* 06. Et-Line Icons */
+/* 07. Hero */
+/* 08. Text & Headings */
+/* 09. Home Page */
+/*  09.1 Gym Ethos */
+/*  09.2 Coaching */
+/*  09.3 Why Choose Us? */
+/*  09.4 Discovery Call */
+/* 10. About Page */
+/*  10.1 Testamonial Slider */
+/* 11. Coaching Page */
+/*  11.1 Coaching Tabs */
+/* 12. Gallery Page */
+/* 13. Contact Page */
+/* 14. Error 404 */
+/* 15. Thank You */
+/* 16. Google Maps */
+/* 17. Footer */
+/* 18. Media Query */
+/*  18.1 Mobile Menu Queries */
+/*  18.2 General Queries */
 
 /* 01. Fonts */
 
 @import "et-line.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;700&family=Dosis:wght@200..800&Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-/* 02. Common Styles */
+/* 02. Global Variables */
+
+:root {
+  --font-color: #777;
+  --accent-color: #dfb255;
+  --font: "Lato", sans-serif;
+}
+
+/* 03. Common Styles */
 
 * {
   margin: 0;
@@ -38,9 +49,9 @@
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: var(--font);
   font-weight: 300;
-  color: #777;
+  color: var(--font-color);
 }
 
 html {
@@ -121,10 +132,9 @@ h2,
 h3 {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
-
 }
 
-/* 03. Navigation */
+/* 04. Navigation */
 
 #nav-bar {
   display: flex;
@@ -157,7 +167,7 @@ h3 {
 }
 
 #nav-menu > li {
-  font-family: Lato, sans-serif;
+  font-family: var(--font);
   overflow: hidden;
   padding: 10px 15px;
   margin-right: 30px;
@@ -204,8 +214,8 @@ h3 {
 }
 
 .underlined {
-  border-bottom: 1px solid #dfb255;
-  color: #dfb255;
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--accent-color);
   padding-bottom: 3px;
   transition: 0.3s ease-in-out;
 }
@@ -236,7 +246,7 @@ h3 {
   height: 1px;
   left: 50%;
   position: relative;
-  background: #dfb255;
+  background: var(--accent-color);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -284,195 +294,7 @@ h3 {
   z-index: 6;
 }
 
-/* 04. Hero */
-
-#hero-image {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3)), url("../images/hero-images/hero-image.jpg") no-repeat center center;
-  background-size: cover;
-  z-index: 0;
-}
-
-#hero-image-small {
-  height: 40vh;
-  width: 100%;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/hero-images/hero-image-small.jpg") no-repeat center center;
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: 50% 21%;
-  z-index: 0;
-}
-
-#hero-logo {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1;
-}
-
-#hero-logo > .button {
-  position: relative;
-  top: 3.8%;
-  border-radius: 0;
-}
-
-#location {
-  position: absolute;
-  height: 40vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 0;
-}
-
-/* 05. Gym Ethos */
-
-#gym-ethos {
-  text-align: center;
-  display: flex;
-  padding: 0 50px;
-}
-
-#gym-ethos > .container > h2 {
-  margin-bottom: 50px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-#gym-ethos > .container > #end-page {
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-#gym-ethos > .container > p {
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-/* 06. Coaching */
-
-#coaching {
-  display: flex;
-  padding: 100px 50px;
-  text-align: center;
-  background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/coaching.png") no-repeat center center;
-  background-size: cover;
-}
-
-#coaching > .container > h2 {
-  margin-bottom: 50px;
-  color: #dcdcdc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-#coaching > .container > p {
-  margin-bottom: 50px;
-  color: #dcdcdc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-/* 07. Why Choose Us? */
-
-#why-choose-us {
-  display: flex;
-  padding: 0 50px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-#why-choose-us > .column-container > h2 {
-  margin-bottom: 50px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-#column-left {
-  float: left;
-  width: 33.33%;
-  padding-right: 24px;
-  box-sizing: border-box;
-}
-
-#column-right {
-  float: right;
-  width: 33.33%;
-  padding-left: 24px;
-  box-sizing: border-box;
-}
-
-#column-center {
-  display: inline-block;
-  width: 33.33%;
-  padding: 0 24px 0 24px;
-  box-sizing: border-box;
-}
-
-#column-left > h3,
-#column-center > h3,
-#column-right > h3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-
-#column-left > p,
-#column-center > p,
-#column-right > p {
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: 400;
-  text-align: left;
-}
-
-/* 08. Buttons */
+/* 05. Buttons */
 
 button {
   cursor: pointer;
@@ -534,7 +356,7 @@ button {
   transition: 0.5s ease-in-out;
 }
 
-/* 09. Et-Line Icons */
+/* 06. Et-Line Icons */
 
 .features-icon {
   font-size: 48px;
@@ -542,20 +364,72 @@ button {
   color: #111;
 }
 
-/* 10. Discovery Call */
+/* 07. Hero */
 
-#contact-us {
-  display: flex;
-  padding: 100px 50px;
-  text-align: center;
-  background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/contact-us.png") no-repeat center center;
+#hero-image {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3)), url("../images/hero-images/hero-image.jpg") no-repeat center center;
   background-size: cover;
+  z-index: 0;
 }
 
-#contact-us > .container > h2 {
+#hero-image-small {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/hero-images/hero-image-small.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: 50% 21%;
+  z-index: 0;
+}
+
+#hero-logo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#hero-logo > .button {
+  position: relative;
+  top: 3.8%;
+  border-radius: 0;
+}
+
+#location {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+}
+
+/* 08. Text & Headings */
+
+.home-white-text h2,
+#coaching h2,
+#discovery-call h2,
+#about-us h2,
+#about-text-title,
+#about-us h3,
+#discovery-call-white h2,
+#faq h2,
+#form-contact h2,
+#get-in-touch h2 {
   margin-bottom: 50px;
-  color: #dcdcdc;
+  color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -565,19 +439,121 @@ button {
   letter-spacing: 5px;
 }
 
-#contact-us > .container > p {
-    margin-bottom: 25px;
-    color: #dcdcdc;
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 400;
+.home-white-text #end-page {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
-#contact-us > .container > #end-trial {
+.home-white-text p,
+#coaching p,
+#discovery-call p,
+#faq p,
+#discovery-call-white p {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+#coaching h2,
+#discovery-call h2,
+#coaching p,
+#discovery-call p,
+#get-in-touch h2 {
+  margin-bottom: 50px;
+  color: #dcdcdc;
+}
+
+/* 09. Home Page */
+
+.home-white-text {
+  text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+/* 09.1 Coaching */
+
+#coaching {
+  display: flex;
+  padding: 100px 50px;
+  text-align: center;
+  background-color: #111;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/coaching.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* 09.2 Why Choose Us? */
+
+#column-left {
+  float: left;
+  width: 33.33%;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+#column-right {
+  float: right;
+  width: 33.33%;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+#column-center {
+  display: inline-block;
+  width: 33.33%;
+  padding: 0 24px 0 24px;
+  box-sizing: border-box;
+}
+
+.home-white-text .column-container p {
+  margin-bottom: 0px;
+}
+
+#column-left > h3,
+#column-center > h3,
+#column-right > h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#column-left > p,
+#column-center > p,
+#column-right > p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* 09.3 Discovery Call */
+
+#discovery-call {
+  display: flex;
+  padding: 100px 50px;
+  text-align: center;
+  background-color: #111;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
+  background-size: cover;
+}
+
+#discovery-call #end-trial {
   margin-bottom: 50px;
 }
 
-/* 11. About Us */
+/* 10. About Page */
 
 #location > h1 {
   font-family: Dosis;
@@ -586,19 +562,6 @@ button {
   letter-spacing: 25px;
   font-weight: 400;
   z-index: 0;
-}
-
-#about-text-description {
-  margin: 0 200px 50px 200px;
-  color: #595959;
-  display: flex;
-  text-transform: none;
-  font-family: Lato, sans-serif;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.4;
-  font-weight: 300;
-  letter-spacing: 0;
 }
 
 #about-us {
@@ -622,28 +585,14 @@ button {
   padding-bottom: 24px;
 }
 
-#about-us h2 {
-  margin-top: 25px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  padding: 0 12px 24px 12px;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
 #about-text-title {
   margin-bottom: 75px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
+}
+
+#about-us h2 {
+  margin: 25px 0 0 0;
+  padding: 0 12px 24px 12px;
+  justify-content: initial;
 }
 
 #about-us img {
@@ -653,33 +602,7 @@ button {
 }
 
 #about-us h3 {
-  margin-bottom: 50px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 12px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-#about-us p#end-page {
-  margin-top: 50px;
-  margin-bottom: 0px;
-  display: flex;
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-#about-us p {
-  display: flex;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
-  padding: 0 12px 0 12px;
 }
 
 #about-us ul {
@@ -726,20 +649,15 @@ button {
 }
 
 #about-questions li::marker {
-  color: #dfb255;
+  color: var(--accent-color);
 }
 
-#about-contact p {
-  margin-bottom: 25px;
-  display: flex;
+#faq p {
   justify-content: left;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
   padding: 0 150px;
 }
 
-#about-contact ul {
+#faq ul {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -759,7 +677,7 @@ button {
 .accordion > dt > a {
   display: block;
   position: relative;
-  color: #777;
+  color: var(--font-color);
   text-decoration: none;
   padding: 14px 20px;
   border: 1px solid #AAA;
@@ -822,28 +740,28 @@ button {
   padding: 10px 20px 20px;
   font-size: 14px;
   line-height: 1.8;
-  color: #777;
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-#about-contact p {
+#faq p {
   margin-bottom: 0;
 }
 
-#about-contact #faq-first {
+#faq #faq-first {
   margin-bottom: 25px;
 }
 
-/* 12. Testamonial Slider */
+/* 10.1 Testamonial Slider */
 
 #testimonials {
   width: auto;
   padding: 140px 50px;
   text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/contact-us.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1071,26 +989,18 @@ button {
   margin-top: 50px;
 }
 
-/* 13. Coaching Services */
+/* 11. Coaching Page */
 
 #coaching-services {
   text-align: center;
 }
 
-#coaching-services > .column-container > h1 {
-  color: #777;
-  margin-bottom: 100px;
-  font-size: 280%;
-  letter-spacing: 10px;
-  font-weight: 400;
-}
-
-#coaching-services > .column-container > .text-title {
+#coaching-services .text-title {
   margin: 0 200px 50px 200px;
   color: #595959;
   display: flex;
   text-transform: none;
-  font-family: Lato, sans-serif;
+  font-family: var(--font);
   font-size: 22px;
   line-height: 1.4;
   font-weight: 300;
@@ -1213,11 +1123,11 @@ button {
 }
 
 .coaching-per-week {
-font-weight: 300;
-line-height: 1;
-text-transform: lowercase;
-color: #8F8F8F;
-font-size: 14px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: lowercase;
+  color: #8F8F8F;
+  font-size: 14px;
 }
 
 #premium,
@@ -1242,7 +1152,7 @@ font-size: 14px;
 }
 
 .coaching-description p:last-child,
-#about-contact li:last-child {
+#faq li:last-child {
   margin-bottom: 0;
 }
 
@@ -1269,12 +1179,12 @@ font-size: 14px;
   color: #ccc;
 }
 
-/* 13.1 Coaching Tabs */
+/* 11.1 Coaching Tabs */
 
 #coaching-comparison-tabs {
 text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.97)), url("../images/contact-us.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.97)), url("../images/discovery-call.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1358,7 +1268,7 @@ text-align: center;
   transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-/* 14. Gallery */
+/* 12. Gallery Page */
 
 #gallery {
   display: flex;
@@ -1378,49 +1288,36 @@ text-align: center;
   object-fit: cover;
 }
 
-#free-trial #gallery-paragraph {
+#discovery-call-white #gallery-paragraph {
   margin-bottom: 50px;
 }
 
-/* 15. Contact */
+/* 13. Contact Page */
 
-#free-trial,
-#about-contact {
+#discovery-call-white,
+#faq {
   display: flex;
   padding: 0 50px;
   text-align: center;
 }
 
-#free-trial p,
-#about-contact p {
-justify-content: center;
+#discovery-call-white p,
+#faq p {
+  justify-content: center;
 }
 
-#free-trial > .container > h1,
-#about-contact h1 {
+#discovery-call-white h1,
+#faq h1 {
   text-align: center;
-  color: #777;
+  color: var(--font-color);
   margin-bottom: 100px;
   font-size: 280%;
   letter-spacing: 10px;
   font-weight: 400;
 }
 
-#free-trial h2,
-#about-contact h2 {
-  margin-bottom: 75px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-#free-trial-button,
-#about-contact-button {
+.discovery-call-white-button,
+#faq-button {
   text-align: center;
 }
 
@@ -1446,20 +1343,8 @@ justify-content: center;
   padding: 140px 0;
   text-align: left;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/contact-us.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
   background-size: cover;
-}
-
-#get-in-touch h2 {
-  margin-bottom: 50px;
-  color: #dcdcdc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
 }
 
 #contact-item-left {
@@ -1539,21 +1424,20 @@ justify-content: center;
   margin-right: 5px;
 }
 
-#free-trial > .container > p {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: left;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 400;
+#form-contact h2 {
+  margin-bottom: 75px;
 }
 
-#free-trial > .container > #end-trial {
+#discovery-call-white p {
+  justify-content: left;
+}
+
+#discovery-call-white #end-trial {
   margin-bottom: 50px;
 }
 
-#free-trial > .container > #end-call,
-#about-contact #end-call {
+#discovery-call-white #end-call,
+#faq #end-call {
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -1576,18 +1460,6 @@ justify-content: center;
   display: block;
   text-align: left;
   margin: auto;
-}
-
-#form-contact h2 {
-  margin-bottom: 75px;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 5px;
 }
 
 .form-shape {
@@ -1625,7 +1497,7 @@ justify-content: center;
   outline: 0;
 }
 
-/* 16. Error 404 */
+/* 14. Error 404 */
 
 #image-404 {
   height: 100vh;
@@ -1648,7 +1520,8 @@ justify-content: center;
   z-index: 0;
 }
 
-#error-404 h1 {
+#error-404 h1,
+#thank-you h1 {
   margin-bottom: 10px;
   position: relative;
   text-align: center;
@@ -1659,7 +1532,8 @@ justify-content: center;
   color: #fff;
 }
 
-#error-404 h2 {
+#error-404 h2,
+#thank-you h2 {
   margin-bottom: 20px;
   position: relative;
   text-align: center;
@@ -1681,7 +1555,7 @@ justify-content: center;
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* 17. Thank You */
+/* 15. Thank You */
 
 #thank-you-image {
   height: 100vh;
@@ -1705,28 +1579,10 @@ justify-content: center;
 }
 
 #thank-you h1 {
-  margin-bottom: 10px;
-  position: relative;
-  text-align: center;
   font-size: 60px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  color: #fff;
 }
 
-#thank-you h2 {
-  margin-bottom: 20px;
-  position: relative;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* 18. Google Maps */
+/* 16. Google Maps */
 
 #google-map>iframe {
   display: block;
@@ -1736,7 +1592,7 @@ justify-content: center;
   z-index: 1;
 }
 
-/* 19. Footer */
+/* 17. Footer */
 
 #footer {
   height: 275px;
@@ -1777,7 +1633,7 @@ justify-content: center;
 }
 
 #social-links i {
-  color: #777;
+  color: var(--font-color);
   border: 2px solid #777;
   width: 45px;
   height: 45px;
@@ -1798,12 +1654,11 @@ justify-content: center;
   transition: 0.3s ease-in-out;
 }
 
-/* 20. Media Queries */
+/* 18. Media Queries */
 
-/* 20.1 Mobile Menu Queries */
+/* 18.1 Mobile Menu Queries */
 
 @media (max-width: 788px) {
-
   #nav-menu {
     display: none;
   }
@@ -1843,11 +1698,12 @@ justify-content: center;
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.15s linear;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-  #nav-toggle:hover, #nav-toggle:focus {
-    background-color: rgba(0, 0, 0, .5);
+  #nav-toggle:hover,
+  #nav-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .nav-item {
@@ -1888,7 +1744,8 @@ justify-content: center;
     padding: 1rem;
   }
 
-  .nav-link:hover, .nav-link:focus {
+  .nav-link:hover,
+  .nav-link:focus {
     outline: 0;
     background-color: rgba(0, 0, 0, 0.2);
   }
@@ -1901,7 +1758,8 @@ justify-content: center;
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
-  .menuicon-bar, .menuicon-circle {
+  .menuicon-bar,
+  .menuicon-circle {
     fill: none;
     stroke: currentColor;
     stroke-width: 3;
@@ -1944,36 +1802,46 @@ justify-content: center;
     will-change: transform;
   }
 
-  .nav:target > #splash::after, .nav--open > #splash::after {
+  .nav:target > #splash::after,
+  .nav--open > #splash::after {
     transform: scale(1);
   }
 
-  .nav:target .menuicon, .nav--open .menuicon {
+  .nav:target .menuicon,
+  .nav--open .menuicon {
     color: white;
     transform: rotate(180deg);
   }
 
-  .nav:target .menuicon-circle, .nav--open .menuicon-circle {
+  .nav:target .menuicon-circle,
+  .nav--open .menuicon-circle {
     stroke-dashoffset: 0;
   }
 
-  .nav:target .menuicon-bar:nth-child(1), .nav--open .menuicon-bar:nth-child(1), .nav:target .menuicon-bar:nth-child(4), .nav--open .menuicon-bar:nth-child(4) {
+  .nav:target .menuicon-bar:nth-child(1),
+  .nav--open .menuicon-bar:nth-child(1),
+  .nav:target .menuicon-bar:nth-child(4),
+  .nav--open .menuicon-bar:nth-child(4) {
     opacity: 0;
   }
 
-  .nav:target .menuicon-bar:nth-child(2), .nav--open .menuicon-bar:nth-child(2) {
+  .nav:target .menuicon-bar:nth-child(2),
+  .nav--open .menuicon-bar:nth-child(2) {
     transform: rotate(45deg);
   }
 
-  .nav:target .menuicon-bar:nth-child(3), .nav--open .menuicon-bar:nth-child(3) {
+  .nav:target .menuicon-bar:nth-child(3),
+  .nav--open .menuicon-bar:nth-child(3) {
     transform: rotate(-45deg);
   }
 
-  .nav:target #mobile-nav-menu, .nav--open #mobile-nav-menu {
+  .nav:target #mobile-nav-menu,
+  .nav--open #mobile-nav-menu {
     visibility: visible;
   }
 
-  .nav:target .nav-item, .nav--open .nav-item {
+  .nav:target .nav-item,
+  .nav--open .nav-item {
     opacity: 1;
     transform: translateY(0);
   }
@@ -2001,7 +1869,7 @@ justify-content: center;
   #red-nav-logo {
     opacity: 0;
     margin-left: 0px;
-    transition:opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 
   #nav-bar.scroll {
@@ -2014,30 +1882,27 @@ justify-content: center;
     padding: 10px 0px 0px 0px;
     margin-right: 0px;
     z-index: inherit;
-   }
-
+  }
 }
 
-/* 20.2 General Queries */
+/* 18.2 General Queries */
 
 @media (min-width: 768px) {
-
-    .container {
-        width: 750px;
-    }
-
+  .container {
+    width: 750px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container,
-    .form-container,
-    .gallery-container {
-        width: 970px;
-    }
+  .container,
+  .form-container,
+  .gallery-container {
+    width: 970px;
+  }
 
-        .column {
-        width: 83.34%;
-    }
+  .column {
+    width: 83.34%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2064,42 +1929,42 @@ justify-content: center;
 }
 
 @media (max-width: 1200px) {
-    .form-shape,
-    .block {
-        width: 50%;
-    }
-        #column-left,
-    #column-center {
-        width: 100%;
-        padding: 0px 0px 50px 0;
-    }
+  .form-shape,
+  .block {
+    width: 50%;
+  }
 
-#column-left > p,
-#column-center > p,
-#column-right > p {
+  #column-left,
+  #column-center {
+    width: 100%;
+    padding: 0px 0px 50px 0;
+  }
+
+  #column-left > p,
+  #column-center > p,
+  #column-right > p {
     text-align: center;
-}
+  }
 
-    #column-right {
-        width: 100%;
-        padding: 0px;
-    }
+  #column-right {
+    width: 100%;
+    padding: 0px;
+  }
 
-        #contact-item-left,
-        #contact-item-right
-    {
-        float: none;
-        width: 100%;
-        padding-bottom: 20px;
-    }
+  #contact-item-left,
+  #contact-item-right {
+    float: none;
+    width: 100%;
+    padding-bottom: 20px;
+  }
 
-     #contact-item-center {
-        width: 100%;
-        padding-bottom: 20px;
-    }
+  #contact-item-center {
+    width: 100%;
+    padding-bottom: 20px;
+  }
 
-            #contact-options {
-                width: auto;
+  #contact-options {
+    width: auto;
     margin-left: 3%;
   }
 }
@@ -2120,7 +1985,7 @@ justify-content: center;
   .coaching-right,
   #coaching-comparisons .coaching-right {
     width: 100%;
-    padding: 0
+    padding: 0;
   }
 
   #coaching-comparisons {
@@ -2130,16 +1995,17 @@ justify-content: center;
 
   #coaching-services > .column-container > .text-title {
     margin: 0 50px 50px 50px;
-   }
+  }
 
   .column-container {
     width: 80%;
   }
 
-  #gym-ethos,
+  .home-white-text p,
+  .home-white-text h2,
   #coaching p,
-  #free-trial,
-  #contact-us p {
+  #discovery-call-white,
+  #discovery-call p {
     text-align: left;
   }
 
@@ -2160,108 +2026,106 @@ justify-content: center;
     margin: 0 100px;
   }
 
-  #about-contact p {
+  #faq p {
     padding: 0 100px;
   }
-
 }
 
 @media (max-width: 768px) {
-    #hero-logo > img {
-        max-width: 85%;
-    }
-
-    #hero-logo > h1 {
-        font-size: 75%;
-    }
-
-    #gallery {
-        padding: 0 10px;
-    }
-
-    #popup-gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-        #gym-ethos,
-    #why-choose-us,
-    #free-trial {
-        padding: 0px 10px;
-    }
-
-        #coaching,
-        #contact-us {
-            padding: 100px 10px;
-        }
-
-        #hero-image-small,
-        #location {
-            height: 30vh;
-        }
-
-        #location > h1 {
-            font-size: 180%;
-            letter-spacing: 15px;
-        }
-
-    .container,
-    .column,
-    .form-shape,
-    .block {
-        width: 90%;
-    }
-
-    #column-left > p,
-    #column-center > p,
-    #column-right > p {
-      text-align: left;
+  #hero-logo > img {
+    max-width: 85%;
   }
 
-    .coaching-left,
-    .coaching-center {
-        padding: 0px 0px 25px 0;
-        width: 100%;
-    }
+  #hero-logo > h1 {
+    font-size: 75%;
+  }
 
-    .coaching-right {
-       width: 100%;
-       padding: 0
-     }
+  #gallery {
+    padding: 0 10px;
+  }
 
-     .coaching-description > .coaching-left,
-     .coaching-description > .coaching-center {
-        padding: 0;
-     }
+  #popup-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-     #coaching-services > .column-container > .text-title {
-        margin: 0 24px 50px 24px;
-     }
+  .home-white-text,
+  #discovery-call-white {
+    padding: 0px 10px;
+  }
 
-     .tab-item {
-        padding: 10px 5px;
-    }
+  #coaching,
+  #discovery-call {
+    padding: 100px 10px;
+  }
 
-    #premium,
-    #semi-private,
-    #online {
-      padding: 35px 10px 0 10px;
-    }
+  #hero-image-small,
+  #location {
+    height: 30vh;
+  }
 
-    .coaching-description li:last-child {
-      margin-bottom: 25px;
-    }
+  #location > h1 {
+    font-size: 180%;
+    letter-spacing: 15px;
+  }
 
-    #about-contact {
-      padding: 0;
-    }
+  .container,
+  .column,
+  .form-shape,
+  .block {
+    width: 90%;
+  }
+
+  #column-left > p,
+  #column-center > p,
+  #column-right > p {
+    text-align: left;
+  }
+
+  .coaching-left,
+  .coaching-center {
+    padding: 0px 0px 25px 0;
+    width: 100%;
+  }
+
+  .coaching-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .coaching-description > .coaching-left,
+  .coaching-description > .coaching-center {
+    padding: 0;
+  }
+
+  #coaching-services > .column-container > .text-title {
+    margin: 0 24px 50px 24px;
+  }
+
+  .tab-item {
+    padding: 10px 5px;
+  }
+
+  #premium,
+  #semi-private,
+  #online {
+    padding: 35px 10px 0 10px;
+  }
+
+  .coaching-description li:last-child {
+    margin-bottom: 25px;
+  }
+
+  #faq {
+    padding: 0;
+  }
 }
 
 @media (max-width: 700px) {
-
   .accordion > dt > a {
     margin: 0;
   }
 
- #about-contact p {
+  #faq p {
     padding: 0px;
   }
 
@@ -2269,36 +2133,34 @@ justify-content: center;
     margin: 25px 0;
   }
 
-  #about-contact ul {
+  #faq ul {
     width: 100%;
   }
-
 }
 
 @media (max-width: 480px) {
-    #hero-logo > h1 {
-        width: 70%;
-        text-align: center;
-    }
+  #hero-logo > h1 {
+    width: 70%;
+    text-align: center;
+  }
 
-    #coaching-services > .column > h1 {
-        font-size: 200%;
-    }
+  #coaching-services > .column > h1 {
+    font-size: 200%;
+  }
 
-            #hero-image-small,
-            #location {
-            height: 20vh;
-}
+  #hero-image-small,
+  #location {
+    height: 20vh;
+  }
 
-        #location > h1 {
-            font-size: 130%;
-            letter-spacing: 15px;
-        }
+  #location > h1 {
+    font-size: 130%;
+    letter-spacing: 15px;
+  }
 
-    .column-container {
-        width: 90%;
-    }
-
+  .column-container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 444px) {
