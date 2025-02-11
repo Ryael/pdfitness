@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('#popup-gallery').magnificPopup({
     delegate: 'a', // child items selector, by clicking on it popup will open.
     type: 'image',
-    gallery:{
-    enabled:true
+    gallery: {
+      enabled: true
     },
-    preload: [0,2]
+    preload: [0, 2]
   });
 });

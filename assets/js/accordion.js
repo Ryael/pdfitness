@@ -1,4 +1,4 @@
-// Accordion
+// Accordion.
 $(".accordion").each(function(){
   var allPanels = $(this).children("dd").hide();
   var allTabs = $(this).children("dt").children("a");
@@ -21,7 +21,7 @@ $(".accordion").each(function(){
 
  });
 
-// Toggle
+// Toggle.
 var allToggles = $(".toggle > dd").hide();
 var allTabs = $(".toggle > dt > a");
 allTabs.attr({

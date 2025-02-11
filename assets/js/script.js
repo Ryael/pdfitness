@@ -29,8 +29,7 @@ window.onscroll = () => {
 function setNavbarTransparency() {
   if (this.scrollY <= 10) {
     setSolidNavbar();
-  }
-  else {
+  } else {
     setTransparentNavbar();
   }
 }
@@ -55,36 +54,35 @@ function setTransparentNavbar() {
 
 // Toggle Menu Active State.
 menuToggle.addEventListener("click", e => {
-    e.preventDefault();
-    isMenuOpen = !isMenuOpen;
+  e.preventDefault();
+  isMenuOpen = !isMenuOpen;
 
-    // Toggle ally attributes and active class
-    menuToggle.setAttribute("aria-expanded", String(isMenuOpen));
-    navMenu.hidden = !isMenuOpen;
-    mobileNav.classList.toggle("nav--open");
-    logoContainer.classList.toggle("mobile-nav");
-    redLogo.classList.toggle("mobile-nav");
+  // Toggle ally attributes and active class
+  menuToggle.setAttribute("aria-expanded", String(isMenuOpen));
+  navMenu.hidden = !isMenuOpen;
+  mobileNav.classList.toggle("nav--open");
+  logoContainer.classList.toggle("mobile-nav");
+  redLogo.classList.toggle("mobile-nav");
 });
 
 // Trap tab inside when open.
 mobileNav.addEventListener("keydown", e => {
-    // Abort if menu isn't open or modifier keys are pressed.
-    if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
-        return;
-    }
+  // Abort if menu isn't open or modifier keys are pressed.
+  if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+    return;
+  }
 
-    // Listen for tab press and move focus,
-    // if we're on either end of the navigation.
-    if (e.keyCode === 9) {
-        if (e.shiftKey) {
-            if (document.activeElement === menuLinks[0]) {
-                menuToggle.focus();
-                e.preventDefault();
-            }
-        } else if (document.activeElement === menuToggle) {
-            menuLinks[0].focus();
-            e.preventDefault();
-        }
+  // Listen for tab press and move focus,
+  // if we're on either end of the navigation.
+  if (e.keyCode === 9) {
+    if (e.shiftKey) {
+      if (document.activeElement === menuLinks[0]) {
+        menuToggle.focus();
+        e.preventDefault();
+      }
+    } else if (document.activeElement === menuToggle) {
+      menuLinks[0].focus();
+      e.preventDefault();
     }
+  }
 });
-

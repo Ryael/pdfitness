@@ -28,8 +28,7 @@ window.onscroll = () => {
 function setNavbarTransparency() {
   if (this.scrollY <= 10) {
     setSolidNavbar();
-  }
-  else {
+  } else {
     setTransparentNavbar();
   }
 }

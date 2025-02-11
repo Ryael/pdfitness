@@ -5,27 +5,27 @@ function removeActiveClass() {
 }
 
 /* Display Premium tab. */
-$("#premium-tab").click(function() {
+$("#premium-tab").click(function () {
   removeActiveClass();
-  $( 'a[href*="#premium"]' ).addClass("active-item");
+  $('a[href*="#premium"]').addClass("active-item");
   $("#premium").addClass("active-tab");
 });
 
 /* Display Semi-Private tab. */
-$("#semi-private-tab").click(function() {
+$("#semi-private-tab").click(function () {
   removeActiveClass();
-  $( 'a[href*="#semi-private"]' ).addClass("active-item");
+  $('a[href*="#semi-private"]').addClass("active-item");
   $("#semi-private").addClass("active-tab");
 });
 
 /* Display Online tab. */
-$("#online-tab").click(function() {
+$("#online-tab").click(function () {
   removeActiveClass();
-  $( 'a[href*="#online"]' ).addClass("active-item");
+  $('a[href*="#online"]').addClass("active-item");
   $("#online").addClass("active-tab");
 });
 
-$(".tab-item > a").click(function() {
+$(".tab-item > a").click(function () {
   if (!($(this).hasClass("active-item"))) {
     $(".active-item").attr("aria-selected", "false");
     $(".active-item").removeClass("active-item");
