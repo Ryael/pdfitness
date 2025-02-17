@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/ExerciseGym">
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <!-- Schema -->
     <meta itemprop="name" content="PD Fitness">
     <meta itemprop="description" content="PD Fitness is a private personal training studio in Tralee that helps busy men &amp; women achieve a health &amp; body transformation.">
-    <meta itemprop="image" content="assets/images/thumbnail.png">
+    <link itemprop="image" href="assets/images/thumbnail.png">
     <!-- End Schema -->
 
     <!-- Facebook -->
@@ -37,6 +37,10 @@
     <!-- Title -->
     <title>Contact — PD Fitness</title>
     <!-- Title -->
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pdfitness.ie/contact.html">
+    <!-- End Canonical Link -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -98,7 +102,7 @@
             <!-- End Navigation Menu -->
 
             <!-- Menu Toggle Button -->
-            <a href="#nav" id="nav-toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <a href="#nav" id="nav-toggle" role="button" aria-expanded="false" aria-controls="mobile-nav">
               <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                 <title>Toggle Menu</title>
                 <g>
@@ -117,6 +121,7 @@
             <!-- End Background Splash -->
           </nav>
         </nav>
+      </div>
     </header>
     <!-- Hero Section -->
     <section>
@@ -128,7 +133,7 @@
 
     <!-- Discovery Call -->
     <section class="section">
-      <div id="discovery-call-white">
+      <div class="discovery-call-white">
         <div class="container">
           <h2>Have a Discovery Call on Us</h2>
           <p> We understand what it is like to want to make a change when it comes to your health & fitness, but not knowing where to turn—that's why we'd like to offer you a discovery call to see if we might be the right fit. </p>
@@ -182,11 +187,11 @@
           <input type="hidden" name="_next" value="https://pdfitness.ie/thank-you.html">
           <div class="start-form">
             <label for="name" class="block">Name</label>
-            <input type="text" id="name" name="name" class="form-shape text-form" placeholder="Name" required aria-required="true"/>
+            <input type="text" id="name" name="name" class="form-shape text-form" placeholder="Name" required aria-required="true">
           </div>
           <div class="start-form">
             <label for="email" class="block">Email</label>
-            <input type="email" id="email" name="email" class="form-shape email-form" placeholder="abc@gmail.com" required aria-required="true"/>
+            <input type="email" id="email" name="email" class="form-shape email-form" placeholder="abc@gmail.com" required aria-required="true">
           </div>
           <div class="end-form">
             <label for="message" class="block">Message</label>

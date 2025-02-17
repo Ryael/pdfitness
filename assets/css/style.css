@@ -425,7 +425,7 @@ button {
 #about-us h2,
 #about-text-title,
 #about-us h3,
-#discovery-call-white h2,
+.discovery-call-white h2,
 #faq h2,
 #form-contact h2,
 #get-in-touch h2 {
@@ -454,7 +454,7 @@ button {
 #coaching p,
 #discovery-call p,
 #faq p,
-#discovery-call-white p {
+.discovery-call-white p {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
@@ -1288,25 +1288,25 @@ text-align: center;
   object-fit: cover;
 }
 
-#discovery-call-white #gallery-paragraph {
+.discovery-call-white #gallery-paragraph {
   margin-bottom: 50px;
 }
 
 /* 13. Contact Page */
 
-#discovery-call-white,
+.discovery-call-white,
 #faq {
   display: flex;
   padding: 0 50px;
   text-align: center;
 }
 
-#discovery-call-white p,
+.discovery-call-white p,
 #faq p {
   justify-content: center;
 }
 
-#discovery-call-white h1,
+.discovery-call-white h1,
 #faq h1 {
   text-align: center;
   color: var(--font-color);
@@ -1428,15 +1428,15 @@ text-align: center;
   margin-bottom: 75px;
 }
 
-#discovery-call-white p {
+.discovery-call-white p {
   justify-content: left;
 }
 
-#discovery-call-white #end-trial {
+.discovery-call-white #end-trial {
   margin-bottom: 50px;
 }
 
-#discovery-call-white #end-call,
+.discovery-call-white #end-call,
 #faq #end-call {
   margin-bottom: 50px;
   justify-content: center;
@@ -2004,7 +2004,7 @@ text-align: center;
   .home-white-text p,
   .home-white-text h2,
   #coaching p,
-  #discovery-call-white,
+  .discovery-call-white,
   #discovery-call p {
     text-align: left;
   }
@@ -2049,7 +2049,7 @@ text-align: center;
   }
 
   .home-white-text,
-  #discovery-call-white {
+  .discovery-call-white {
     padding: 0px 10px;
   }
 
