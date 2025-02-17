@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/ExerciseGym">
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="image" content="assets/images/thumbnail.png">
     <!-- Schema -->
-    <meta itemprop="name" content="PD Fitness">
-    <meta itemprop="description" content="PD Fitness is a private personal training studio in Tralee that helps busy men &amp; women achieve a health &amp; body transformation.">
-    <meta itemprop="image" content="assets/images/thumbnail.png">
+    <meta itemprop="name" content="'.$title.'">
+    <meta itemprop="description" content="'.$description.'">
+    <link itemprop="image" href="'.$meta_image.'">
     <!-- End Schema -->
 
     <!-- Facebook -->
@@ -97,7 +97,7 @@
             <!-- End Navigation Menu -->
 
             <!-- Menu Toggle Button -->
-            <a href="#nav" id="nav-toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <a href="#nav" id="nav-toggle" role="button" aria-expanded="false" aria-controls="mobile-nav">
               <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                 <title>Toggle Menu</title>
                 <g>
@@ -119,19 +119,17 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section>
-      <div id="hero-logo">
-        <img src="assets/images/logo/text-logo-white.webp" alt="PD Fitness text logo"/>
-        <a class="button" href="contact.html">Join Now</a>
-      </div>
-    </section>
+    <div id="hero-logo">
+      <img src="assets/images/logo/text-logo-white.webp" alt="PD Fitness text logo">
+      <a class="button" href="contact.html">Join Now</a>
+    </div>
     <!-- End Hero Section -->
 
     <!-- Gym Ethos -->
     <section class="section">
       <div class="home-white-text">
         <div class="container">
-          <h2>Time To Put Yourself First</h2>
+          <h1>Time To Put Yourself First</h1>
           <p> Using our formula, we will guide you through our proven system of creating a healthier, happier and more confident version of yourself without boring workouts, or fad diets. We believe fitness should enhance your life, rather than take away from it—every transformation starts with an in-depth look at where you currently are, and creates an achievable path to where you want to be. </p>
           <p id="end-page"> Whether that's ditching the mid-afternoon energy slump so you can be active with your kids after school, banishing the expanding midsection that's making it harder to slide into your work trousers each passing year, or finally having the body confidence to buy clothes that show off your hard-earned physique. In just 90 days we'll take you from feeling frustrated with your current trajectory to feeling proud of your reinvigorated relationship with your health. </p>
         </div>
