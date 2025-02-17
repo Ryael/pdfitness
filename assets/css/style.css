@@ -488,7 +488,7 @@ button {
   padding: 100px 50px;
   text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/coaching.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/coaching.webp") no-repeat center center;
   background-size: cover;
 }
 
@@ -545,7 +545,7 @@ button {
   padding: 100px 50px;
   text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.webp") no-repeat center center;
   background-size: cover;
 }
 
@@ -761,7 +761,7 @@ button {
   padding: 140px 50px;
   text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.webp") no-repeat center center;
   background-size: cover;
 }
 
@@ -1184,7 +1184,7 @@ button {
 #coaching-comparison-tabs {
 text-align: center;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.97)), url("../images/discovery-call.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.97)), url("../images/discovery-call.webp") no-repeat center center;
   background-size: cover;
 }
 
@@ -1343,7 +1343,7 @@ text-align: center;
   padding: 140px 0;
   text-align: left;
   background-color: #111;
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.png") no-repeat center center;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url("../images/discovery-call.webp") no-repeat center center;
   background-size: cover;
 }
 
