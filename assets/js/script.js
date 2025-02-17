@@ -8,7 +8,7 @@ const menuLinks = navMenu.querySelectorAll(".nav-link");
 const whiteLogo = myNav.querySelector("#white-nav-logo");
 const redLogo = myNav.querySelector("#red-nav-logo");
 const logoContainer = myNav.querySelector("#logo");
-const activeNavLink = myNav.querySelector(".active")
+const activeNavLink = myNav.querySelector(".active");
 let isMenuOpen = false;
 
 // Uses Lightbox scripts

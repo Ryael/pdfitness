@@ -1,17 +1,10 @@
 /* Constants & Configs */
 
 const myNav = document.querySelector("#nav-bar");
-const mobileNav = document.querySelector("#mobile-nav");
 const navMenu = document.querySelector("#nav-menu");
-const menuToggle = document.querySelector("#nav-toggle");
 const menuLinks = navMenu.querySelectorAll(".nav-link");
 const whiteLogo = myNav.querySelector("#white-nav-logo");
 const redLogo = myNav.querySelector("#red-nav-logo");
-const logoContainer = myNav.querySelector("#logo");
-let isMenuOpen = false;
-
-// Uses Lightbox scripts
-var SimpleLightbox = window.SimpleLightbox;
 
 /* Navigation Bar */
 
@@ -45,4 +38,4 @@ function setTransparentNavbar() {
   whiteLogo.classList.add("transparent");
   redLogo.classList.remove("transparent");
   Array.from(menuLinks).forEach(menuLink => menuLink.classList.add("black"));
-};
+}
