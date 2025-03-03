@@ -454,7 +454,8 @@ button {
 #coaching p,
 #discovery-call p,
 #faq p,
-.discovery-call-white p {
+.discovery-call-white p,
+#about-right p {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
@@ -582,8 +583,8 @@ button {
   margin-left: 8.33333333%;
 }
 
-#about-us #about-right p {
-  padding-bottom: 24px;
+#about-us #about-right p:last-child {
+  margin-bottom: 0px;
 }
 
 #about-text-title {
@@ -591,8 +592,7 @@ button {
 }
 
 #about-us h2 {
-  margin: 25px 0 0 0;
-  padding: 0 12px 24px 12px;
+  margin: 0 0 25px 0;
   justify-content: initial;
 }
 
@@ -1272,7 +1272,7 @@ text-align: center;
 
 #gallery {
   display: flex;
-  padding: 25px 0px 50px 0px;
+  padding: 50px 25px;
 }
 
 #popup-gallery {
@@ -2020,6 +2020,14 @@ text-align: center;
 
   #about-right {
     margin-left: 0;
+  }
+
+  #about-us h2 {
+    margin: 25px 0;
+  }
+
+  #about-us p {
+    margin-bottom: 0;
   }
 
   .accordion > dt > a {
