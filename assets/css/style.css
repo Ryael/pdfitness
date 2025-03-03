@@ -571,7 +571,8 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
-#about-left {
+#about-left,
+#discovery-call-white-button {
   display: flex;
   justify-content: center;
 }
