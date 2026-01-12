@@ -1533,6 +1533,7 @@ text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
   color: #fff;
+  padding: 0 25px;
 }
 
 #error-404 h2,
@@ -1545,6 +1546,7 @@ text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: rgba(255, 255, 255, 0.9);
+  padding: 0 25px;
 }
 
 #error-404 h3 {
